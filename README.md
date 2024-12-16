@@ -4,4 +4,4 @@
 
 - Clique abaixo para acessar o **Mural** dos alunos!
 
-<a href="https://victorluansilva.github.io/turma-ti-senai-2022/" target="_blank"><img src='./public/wall-miniature.png' width="350px" height="200px"></a>
+<a href="https://victorluansilva.github.io/turma-ti-senai-2022/" target="_blank"><img src='./public/wall-miniature.png' ></a>
