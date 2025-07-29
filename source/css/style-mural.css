@@ -1,163 +1,199 @@
+/* General Resets and Base Styles */
 hr {
   margin: 0;
-  color: 0;
-  border: 0;
-  border-top: 0;
+  color: transparent;
+  border: none;
+  border-top: none;
   opacity: 0;
 }
 img, svg {
   vertical-align: unset;
 }
 *, ::after, ::before {
-  box-sizing:unset;
+  box-sizing: border-box;
 }
 
+/* Typography for Headings */
 h3{
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
-  /* margin: 10px 0; */
 }
 
+/* Mural Section Specifics */
 #mural{
-  height: 100%;
-  width: auto;
+  width: 100%;
   padding-bottom: 80px;
-  white-space: nowrap;
 }
 
-#mural .wide-vls.title-vls {
+#mural .wide-ipi.title-ipi {
   margin-bottom: 50px;
 }
 
-.card-container-vls {
+/* Card Container for Flexibility */
+.card-container-ipi {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  flex-direction: row;
   justify-content:center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 15px;
 }
 
-.cardBox-vls {
-  display: inline-block;
+/* Individual Card Box Styling */
+.cardBox-ipi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   background-color: white;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
   border-radius: 8px;
-  padding: 5px 10px;
-  width: 250px;
-  height: 390px;
-  max-width: 200px;
-  max-height: 400px;
+  padding: 15px 10px;
+  width: 280px;
+  min-height: 390px;
+  max-width: 100%;
+  flex-shrink: 0;
 }
 
-
-.card-profile-vls {
+/* Profile Section within Card */
+.card-profile-ipi {
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-  margin: 5px 0px;
+  margin-top: 15px;
   text-align: center;
   font-family: arial;
   background-color: #fff;
   color: black;
   border-radius: 8px;
-  padding: 20px;
-  max-width: inherit;
-  max-height: 40px;
+  padding: 15px 20px;
+  width: 100%;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
-.card-profile-vls a {
+.card-profile-ipi a {
   text-decoration: none;
   font-size: 12px;
   color: black;
 }
 
-.card-profile-vls p.wide-vls {
+.card-profile-ipi p.wide-ipi {
   white-space: normal;
   font-size: 10px;
   margin: 0px;
   letter-spacing: 2px;
-  padding-top: 15px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
-.card-profile-vls button:hover {
+.card-profile-ipi button:hover {
   opacity: 0.7;
   background-color: rgb(205, 219, 236);
   color: inherit;
 }
 
-
-.btn-card-vls {
+/* Card Button Styling */
+.btn-card-ipi {
   background-color: inherit;
   color: #131212;
-  padding: 4px 8px;
+  padding: 8px 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-card-vls:hover {
+.btn-card-ipi:hover {
   background-color: lightsteelblue;
   color: inherit;
 }
 
-.photo-card-vls {
+/* Photo Section within Card */
+.photo-card-ipi {
   display: flex;
-  max-width: inherit;
-  max-height: 300px;
-  height: 250px;
+  width: 100%;
+  max-height: 250px;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 8px 0px;
   border-radius: 10px;
-  flex-flow: column;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
-  align-content: center;
+  padding: 10px;
 }
 
-.photo-card-vls img{
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 10px;
+.photo-card-ipi img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.photo-card-vls p {
-  font-size: 12px;
+.photo-card-ipi p {
+  font-size: 14px;
   white-space: normal;
   padding: 5px 0px;
 }
 
-.fa-group-content-vls {
-  /* margin: 5px 0; */
+/* Social Icons Group */
+.fa-group-content-ipi {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.fa-group-content-vls a{
-  padding-right: 15px;
-  padding-left: 15px;
+.fa-group-content-ipi a{
+  padding: 0 10px;
+  font-size: 1.5em;
 }
 
-.fa-group-content-vls i{
+.fa-group-content-ipi i{
   color: black;
 }
 
-.cardBox-vls hr {
-	border-width: 3px;
+/* Horizontal Rule in Card */
+.cardBox-ipi hr {
+	border-width: 1px;
 	border-radius: 5px;
 	border-style: solid;
-	border-color: black;
-  color:black;
+	border-color: #eee;
+    margin: 15px 0;
+    width: 80%;
+    opacity: 1;
 }
 
-.cardBox-vls h2{
-  font-size: 15px;
+/* Card Heading */
+.cardBox-ipi h2{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Card Responsiveness */
+@media (max-width: 768px) {
+    .cardBox-ipi {
+        width: 45%;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardBox-ipi {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .photo-card-ipi img {
+        width: 120px;
+        height: 120px;
+    }
 }
